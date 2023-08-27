@@ -1,9 +1,9 @@
 """
 In this script we call run our simulations:
 1. The first simulation compares all 4 algorithms: AIFO, AIFO with FIFO ,SP-AIFO
-and PIFO. In this simulation we sum the rank of packets advanced asa function of number of packets.
+and PIFO. In this simulation we sum the rank of packets advanced as a function of the number of packets.
 2. The second simulation compares "dropping" algorithms: AIFO, AIFO with FIFO and SP-AIFO.
-In this simulation we check how many packets were dropped as function of the capacity of AIFO and AIFO with FIFO.
+In this simulation we check how many packets were dropped as a function of the capacity of AIFO and AIFO with FIFO.
 3. The final simulation is similar to the second. the difference is that we change the time of arrival of packets
 instead of the capacity.
 """
