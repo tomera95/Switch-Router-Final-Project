@@ -1,3 +1,9 @@
+"""
+This script contains all relevant packet scheduling algorithms.
+* PIFO is not mentioned here since it has trivial implementation in our simulation.
+"""
+
+
 KEEP_THRESHOLD = 100
 
 

@@ -3,10 +3,23 @@ import numpy as np
 
 
 class Plotter:
+    """
+    This class plots the simulation results.
+
+    """
 
     def __init__(self, fig_size=(12, 8), edge_color='grey',
                  title_weight='Bold',
                  labels_weight='Bold', title_font=18, label_font=15):
+        """
+        Plotter initializer
+        :param fig_size: size of the figure to plot
+        :param edge_color: color of edges between bars
+        :param title_weight: title of plot weight
+        :param labels_weight: labels of legend weight
+        :param title_font: font of the title
+        :param label_font: font of the x/y lables
+        """
         self.label_font = label_font
         self.labels_weight = labels_weight
         self.title_weight = title_weight
@@ -16,6 +29,16 @@ class Plotter:
         self.bar_width = 0.1
 
     def plot(self, X, Y_arr, labels, title, x_label, y_label, path=None):
+        """
+        Plots the results using matplotlibs bar plot.
+        :param X: x-axis of the plot
+        :param Y_arr: array of y-axis
+        :param labels: names of bars for the legend
+        :param title: plots title
+        :param x_label: x-axis label
+        :param y_label: y-axis label
+        :param path: path to save figure
+        """
         fig = plt.subplots(figsize=self.fig_size)
         x_length = len(X)
         y_arr_length = len(Y_arr)
